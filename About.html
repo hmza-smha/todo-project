@@ -5,28 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
-    <style>
-        a{
-            padding: 10px 50px;
-            border-bottom: 1px solid black;
-        }
-        nav img{
-            width: 100px;
-        }
-        #my-img{
-            width: 200px;
-            margin: 50px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <img src="images/logo.png" alt="">
-            <a href="index.html">Tasks</a>
-            <a href="#">Log in</a>
-            <a href="#">Sign in</a>
+            <div class="links">
+                <a href="index.html">Tasks</a>
+                <a href="#">Log in</a>
+                <a href="#">Sign in</a>
+            </div>
         </nav>
     </header>
     
@@ -37,8 +26,9 @@
                     <img id="my-img" src="images/me2.jpg" alt="my-image">
                 </td>
                 <td>
-                    A creative person with Software Eng background, looking forward to the future
-                    <br> where I can learn new things, expand my knowledge, and leverage my learning.
+                    <h1>HamZa,</h1>
+                    <p>A creative person with Software Eng background, looking forward to the future where I can learn new things, expand my knowledge, and leverage my learning.</p>
+                    <a href="#contact">Contact me</a>
                 </td>
             </tr>
         </table>
@@ -46,21 +36,17 @@
 
     <footer>
         <br>
-        <h4>Contact us</h4>
+        <h4 id="contact">Contact us</h4>
         <form>
             <label>Your Name</label>
             <input type="text">
-            <br>
             <label>Your Email</label>
             <input type="text">
-            <br>
             <label>Message</label>
-            <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <br>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
             <input type="submit" value="Send">
         </form>
-        <span>All rigths are reserved &copy; 2022 - made with ❤❤ by HamZa</span>
+        <span>All rigths are reserved &copy; 2022 - made with ❤ by HamZa</span>
     </footer>
 </body>
 </html>
