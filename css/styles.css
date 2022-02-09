@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #1b2021;
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    margin: 50px 100px;
+}
+
+img{
+    width: 100px;
+}
+
+.links  {
+    float: right;
+}
+
+.links a {
+    margin: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #eee;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.links a:hover {
+    border-bottom: 1px dotted springgreen;
+    color: #ddd;
+}
+main{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.grid-container {
+    position: absolute;
+    left:50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    width: 700px;
+}
+
+.grid-item {
+  border: 1px solid #194350;
+  padding: 20px;
+  font-size: 20px;  
+  text-align: left;
+  text-align: center;
+}
+.tasks-names, .status{
+    font-weight: bolder;
+    color: rgb(207, 207, 207);
+}
+
+.done{
+    color: springgreen;
+}
+.in-progress{
+    color: #b8578c;
+}
+
+.taskname{
+    position: relative;
+}
+.taskname span{
+    float: left;
+}
+.taskname input{
+    float: right;
+}
+
+.create_btn{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    background-color: inherit;
+    outline: none;
+    color: #eee;
+    border: 1px dotted springgreen;
+    padding: 10px 25px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.create_btn:hover{
+    background-color: #131f24;
+    border: 1px solid springgreen;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #0b0e0e;
+    padding: 20px 200px 100px;
+}
+footer h4{
+    text-align: center;
+    margin: 10px 0 100px 0;
+    font-size: 40px;
+}
+footer label{
+    display: block;
+}
+footer input{
+    margin-bottom: 50px;
+}
+footer input[type="text"]{
+    width: 250px;
+    height: 35px;
+}
+footer input[type="submit"]{
+    display: block;
+    margin-top: 50px;
+    background-color: inherit;
+    outline: none;
+    color: #eee;
+    border: 1px dotted springgreen;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #131f24;
+    border: 1px solid springgreen;
+    cursor: pointer;
+}
+
+
+/*About Styles*/
+
+main table{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+main table img{
+    width: 300px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+main table td h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+main table td p{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+main table td a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #eee;
+    background-color: #131f24;
+    border: 1px solid springgreen;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+}
