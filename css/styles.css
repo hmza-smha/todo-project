@@ -107,6 +107,7 @@ main{
 footer{
     background-color: #0b0e0e;
     padding: 20px 200px 100px;
+    position: relative;
 }
 footer h4{
     text-align: center;
@@ -171,4 +172,12 @@ main table td a{
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
+}
+
+footer img{
+    width: 900px;
+    position: absolute;
+    right: 0;
+    top: -90px;
+    opacity: 0.2;
 }
