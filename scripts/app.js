@@ -22,3 +22,47 @@ if(welcomeMsg){
     }
     
 }
+
+var answers = [];
+var facebook = prompt("Do you have facebook account ?")
+var instagram = prompt("Do you have instagram account ?")
+var twitter = prompt("Do you have twitter account ?")
+alert("Find your answers into the console!");
+
+addToAnswers(facebook, instagram, twitter);
+displayAnswers();
+
+
+function displayAnswers(){
+
+    console.log("Your name is: " + userName)
+    console.log("Your age is: " + userAge)
+    console.log("Your gender is: " + userGender)
+
+    for(let i = 0; i < answers.length; i++){
+        console.log(answers[i]);
+    }
+
+}
+
+function addToAnswers(fb, ig, tw){
+
+    if(fb != ""){
+        answers.push(fb);
+    }else{
+        answers.push("invalid answer")
+    }
+
+    if(ig != ""){
+        answers.push(ig);
+    }else{
+        answers.push("invalid answer")
+    }
+
+    if(tw != ""){
+        answers.push(tw);
+    }else{
+        answers.push("invalid answer")
+    }
+
+}
