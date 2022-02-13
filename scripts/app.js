@@ -2,7 +2,7 @@ var userName = prompt("Inter your name");
 var userGender = prompt("Inter your Gender (Male/Female)").toLocaleLowerCase();
 
 while(userGender != "male" && userGender != "female"){
-    userGender = prompt("Inter your Gender (Male/Female)");
+    userGender = prompt("Inter your Gender (Male/Female)").toLocaleLowerCase();
 }
 
 var userAge = prompt("Inter your Age");
